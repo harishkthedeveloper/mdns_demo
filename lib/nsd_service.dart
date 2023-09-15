@@ -15,7 +15,7 @@ class MdnsDiscoveryService {
   Completer<bool> isGatewayFound = Completer<bool>();
 
   Future<Discovery> startMdnsDiscovery({bool withNewDiscovery = false}) async {
-    String serviceTypeDiscover = "_salus-local._tcp";
+    String serviceTypeDiscover = "<add_your_service>._tcp";
 
     if (withNewDiscovery) {
       if (discoveries.isNotEmpty) {
